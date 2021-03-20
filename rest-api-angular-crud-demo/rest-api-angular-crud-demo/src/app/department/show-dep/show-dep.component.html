@@ -1,0 +1,117 @@
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>
+        <div class="d-flex flex-row">
+          <input [(ngModel)]="DepartmentIdFilter" class="form-control"
+          (keyup)="FilterFn()" placeholder="Filter">
+
+          <button type="button" class="btn btn-light"
+          (click)="sortResult('DepartmentId',true)">
+          <i class="bi bi-sort-up-alt"></i>
+        </button>
+        <button type="button" class="btn btn-light"
+          (click)="sortResult('DepartmentId',false)">
+          <i class="bi bi-sort-down"></i>
+        </button>
+
+        </div>
+        Department ID
+      </th>
+      <th>
+        <div class="d-flex flex-row">
+          <input [(ngModel)]="DepartmentNameFilter" class="form-control"
+          (keyup)="FilterFn()" placeholder="Filter">
+
+          <button type="button" class="btn btn-light"
+          (click)="sortResult('DepartmentName',true)">
+          <i class="bi bi-sort-up-alt"></i>
+        </button>
+        <button type="button" class="btn btn-light"
+          (click)="sortResult('DepartmentName',false)">
+          <i class="bi bi-sort-down"></i>
+        </button>
+
+        </div>
+        Department Name
+      </th>
+      <th>Options</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let dataItem of DepartmentList">
+      <td>{{ dataItem.DepartmentId }}</td>
+      <td>{{ dataItem.DepartmentName }}</td>
+      <td>
+        <button
+          type="button"
+          class="btn btn-info mr-1"
+          data-toggle="modal"
+          data-target="#exampleModal"
+          (click)="editClick(dataItem)"
+          data-backdrop="static"
+          data-keyboard="false"
+        >
+        <i class="bi bi-pencil-square"></i>Edit
+        </button>
+
+        <button
+          type="button"
+          class="btn btn-danger mr-1"
+          (click)="deleteClick(dataItem)"
+        >
+        <i class="bi bi-trash"></i>Delete
+        </button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- Button trigger modal -->
+<button
+  type="button"
+  class="btn btn-primary float-right m-2"
+  data-toggle="modal"
+  data-target="#exampleModal"
+  (click)="addClick()"
+  data-backdrop="static"
+  data-keyboard="false"
+>
+  Add Department
+</button>
+
+<!-- Modal -->
+<div
+  class="modal fade"
+  id="exampleModal"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">{{ ModalTitle }}</h5>
+        <button
+          type="button"
+          class="close"
+          data-dismiss="modal"
+          aria-label="Close"
+          (click)="closeClick()"
+        >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <app-add-edit-dep
+          [dep]="dep"
+          *ngIf="ActivateAddEditDepComp"
+        ></app-add-edit-dep>
+      </div>
+      <!-- <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div> -->
+    </div>
+  </div>
+</div>

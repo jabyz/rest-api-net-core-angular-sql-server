@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\52656\Desktop\rest-api-net-core-crud-demo\rest-api-net-core-crud-demo\bin\Release\netcoreapp3.1\publish\</_PublishTargetUrl>
+    <History>True|2021-03-13T19:31:44.5302677Z;True|2021-03-13T12:31:25.8609272-07:00;True|2021-03-13T12:22:16.6158356-07:00;True|2021-03-13T12:21:49.3087350-07:00;True|2021-03-13T12:17:39.7136316-07:00;True|2021-03-13T10:46:35.6749437-07:00;False|2021-03-13T10:46:09.7439509-07:00;True|2021-03-13T10:36:50.0257429-07:00;True|2021-03-13T10:07:56.8782625-07:00;True|2021-03-13T09:57:10.3411777-07:00;True|2021-03-13T09:39:13.7791048-07:00;True|2021-03-10T19:23:02.8611476-07:00;False|2021-03-10T19:22:49.4694000-07:00;True|2021-03-10T19:21:20.0346762-07:00;False|2021-03-10T19:21:07.4397565-07:00;True|2021-03-10T19:14:14.7334968-07:00;False|2021-03-10T19:13:34.0434408-07:00;True|2021-03-10T19:08:32.4827574-07:00;True|2021-03-10T13:33:55.9442078-07:00;</History>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <DestinationConnectionStrings Include="localHost">
+      <Value>Data Source=192.168.100.5\MSSQLSERVER,1433%3bDatabase=demo-rest-api%3bUser ID=sa%3bPassword=Futbolit0%3bMultipleActiveResultSets=true%3b</Value>
+    </DestinationConnectionStrings>
+  </ItemGroup>
+</Project>

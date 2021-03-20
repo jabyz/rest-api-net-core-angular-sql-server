@@ -1,0 +1,50 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+rest-api-angular-crud-demo/rest-api-angular-crud-demo/dist
+rest-api-angular-crud-demo/rest-api-angular-crud-demo/tmp
+rest-api-angular-crud-demo/rest-api-angular-crud-demo/out-tsc
+# Only exists if Bazel was run
+rest-api-angular-crud-demo/rest-api-angular-crud-demo/bazel-out
+
+# dependencies
+rest-api-angular-crud-demo/rest-api-angular-crud-demo/node_modules
+
+# profiling files
+rest-api-angular-crud-demo/rest-api-angular-crud-demochrome-profiler-events*.json
+rest-api-angular-crud-demo/rest-api-angular-crud-demospeed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
+
+
+rest-api-net-core-crud-demo/rest-api-net-core-crud-demo/obj/
+rest-api-net-core-crud-demo/rest-api-net-core-crud-demo/bin/
